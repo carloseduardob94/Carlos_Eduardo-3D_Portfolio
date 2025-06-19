@@ -1,4 +1,5 @@
 import Button from "../components/Button";
+import HeroExperience from "../components/HeroModels/HeroExperience";
 import { words } from "../constants";
 
 const Hero = () => {
@@ -17,7 +18,7 @@ const Hero = () => {
           <div className="flex flex-col gap-7">
             <div className="hero-text">
               <h1>
-                Shaping
+                Transforming
                 <span className="slide">
                   <span className="wrapper">
                     {words.map((word) => (
@@ -37,7 +38,7 @@ const Hero = () => {
               <h1>into Real Projects</h1>
               <h1>that Deliver Results</h1>
             </div>
-            <p className="text-white-50 md:text-xl relative z-10 pointer-events-none">Hi, I'm Carlos Eduardo, a engineer based in Brazil with a passion for code.</p>
+            <p className="text-white-50 md:text-xl relative z-10 pointer-events-none">Hi, I'm Carlos Eduardo, a software engineer from Brazil, passionate about turning ideas into products.</p>
             <Button
               className="md:w-80 md:h-16 w-60 h-12"
               id="button"
@@ -46,6 +47,11 @@ const Hero = () => {
           </div>
         </header>
         {/* RIGH: 3D MODEL */}
+        <figure>
+          <div className="hero-3d-layout">
+            <HeroExperience />
+          </div>
+        </figure>
       </div>
     </section>
   )
