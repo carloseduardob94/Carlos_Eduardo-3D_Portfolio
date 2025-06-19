@@ -28,11 +28,17 @@ const words = [
   { text: "Code", imgPath: "/images/code.svg" },
 ];
 
-const counterItems = [
-  { value: 15, suffix: "+", label: "Years of Experience" },
-  { value: 200, suffix: "+", label: "Satisfied Clients" },
-  { value: 108, suffix: "+", label: "Completed Projects" },
-  { value: 90, suffix: "%", label: "Client Retention Rate" },
+type CounterItems = {
+  value: number;
+  suffix: string;
+  label: string;
+}
+
+const counterItems: CounterItems[] = [
+  { value: 5, suffix: "+", label: "Years of Experience" },
+  { value: 40, suffix: "+", label: "Satisfied Clients" },
+  { value: 65, suffix: "+", label: "Completed Projects" },
+  { value: 92, suffix: "%", label: "Client Retention Rate" },
 ];
 
 const logoIconsList = [
