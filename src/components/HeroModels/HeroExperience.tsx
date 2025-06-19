@@ -3,6 +3,7 @@ import { Canvas } from "@react-three/fiber";
 import { useMediaQuery } from "react-responsive";
 import { Room } from './Room.tsx'
 import HeroLights from "./HeroLights.tsx";
+import Particles from "./Particles.tsx";
 
 const HeroExperience = () => {
   const isTablet = useMediaQuery({ query: '(max-width: 1024px)' })
@@ -20,6 +21,7 @@ const HeroExperience = () => {
       />
 
       <HeroLights />
+      <Particles count={200} />
       <group
         scale={isMobile ? 0.7 : 1}
         position={[0, -3.5, 0]}
