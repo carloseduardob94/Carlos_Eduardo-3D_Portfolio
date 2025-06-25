@@ -3,17 +3,17 @@ import LogoSection from "./sections/LogoSection";
 import Hero from "./sections/Hero";
 import FeatureCards from "./sections/FeatureCards";
 import ShowcaseSection from "./sections/ShowcaseSection";
+import ExperienceSection from "./sections/ExperienceSection";
 
 const App = () => {
   return (
     <>
-      <div className="md:w-full w-screen flex justify-center px-5 md:px-20">
-        <NavBar />
-      </div>
+      <NavBar />
       <Hero />
       <ShowcaseSection />
       <LogoSection />
       <FeatureCards />
+      <ExperienceSection />
     </>
   )
 }
